@@ -30,7 +30,7 @@ const Login =({navigation})=>{
               <Text primary  iconLeft style={styles.text}>
               Don't have an account? 
               </Text>
-            <Button primary rounded iconRight  onPress={()=>navigation.navigate('Home')} buttonStyle={styles.loginbutton}
+            <Button primary rounded iconRight  onPress={()=>navigation.navigate('Register')} buttonStyle={styles.loginbutton}
             title="Create an Account">
             </Button>
             </FormControl>

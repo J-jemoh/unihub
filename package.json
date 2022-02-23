@@ -23,6 +23,7 @@
     "react-native-dynamic-vector-icons": "^1.1.6",
     "react-native-elements": "^3.4.2",
     "react-native-gesture-handler": "^2.2.0",
+    "react-native-paper": "^4.11.2",
     "react-native-reanimated": "^2.4.1",
     "react-native-safe-area-context": "^3.4.1",
     "react-native-screens": "^3.12.0",

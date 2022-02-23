@@ -56,6 +56,13 @@ const styles=StyleSheet.create({
         flexDirection: "row",
         flexWrap: "wrap",
         flex:1,
+      },
+      ordview:{
+        flex: 1,
+        width:'100%',
+        marginTop:'10%',
+        height:'100%',
+        
       }
   
   
