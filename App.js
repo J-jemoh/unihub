@@ -8,13 +8,15 @@ import Loginn from "./pages/login"
 import Homme from "./pages/home"
 import Dashboard from "./pages/dashboard"
 import Register from './pages/register';
+import LandingPage from './pages/landingpage';
 
 const Stack = createNativeStackNavigator();
 const App =()=>{
   return( 
     <NativeBaseProvider >
      <NavigationContainer>
-     <Stack.Navigator>
+     <Stack.Navigator initialRouteName='Landing'>
+     <Stack.Screen name="Landing" component={LandingPage} options={{headerShown: false}} />
      <Stack.Screen name="Login" component={Loginn} options={{headerShown: false}} />
      <Stack.Screen name="Home" component={Homme} />
      <Stack.Screen name="Dashboard" component={Dashboard} />

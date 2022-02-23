@@ -53,9 +53,12 @@ const styles=StyleSheet.create({
         textAlign: "center",
       },
       row:{
+        width:'100%',
         flexDirection: "row",
         flexWrap: "wrap",
         flex:1,
+        justifyContent:'space-between',
+        marginTop:'5%'
       },
       ordview:{
         flex: 1,
@@ -63,6 +66,16 @@ const styles=StyleSheet.create({
         marginTop:'10%',
         height:'100%',
         
+      },
+      landingheader:{
+        width:'100%',
+        height:'70%',
+      
+      },
+      landingfooter:{
+        width:'100%',
+        height:'30%',
+      
       }
   
   
