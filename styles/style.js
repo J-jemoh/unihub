@@ -65,6 +65,7 @@ const styles=StyleSheet.create({
         width:'100%',
         marginTop:'10%',
         height:'100%',
+
         
       },
       landingheader:{

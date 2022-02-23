@@ -11,7 +11,7 @@ const Register =()=>{
     return(
         <View style={styles.ordview}>
             
-                <Text style={{fontWeight:'normal',marginLeft:'2%',marginBottom:'3%'}}>Lets Start by creating your account</Text>
+                <Text style={{fontWeight:'bold',marginLeft:'2%',marginBottom:'3%',fontSize:20,color:'#1b2a4e'}}>Lets Start by creating your account</Text>
           
             <ScrollView>
                
