@@ -6,7 +6,7 @@ import { Button, Avatar,Icon,Card } from 'react-native-elements'
 import { RadioButton } from 'react-native-paper';
 import styles from "../styles/style"
 
-const Register =()=>{
+const Register =({navigation})=>{
     const [value, setValue] = React.useState('1');
     return(
         <View style={styles.ordview}>
@@ -37,7 +37,7 @@ const Register =()=>{
                 acknowledge that i have read the privacy policy.</Text>
                 <Text style={{marginLeft:'2%',marginTop:'3%'}}>I also agree that Unihub or its reresentatives may contact me bu Email
                 ,phone or SMS at the email address or number I provide including for marketing purpose.</Text>
-                <Button primary rounded iconRight  onPress={()=>navigation.navigate('Register')} buttonStyle={styles.loginbutton}
+                <Button primary rounded iconRight  onPress={()=>navigation.navigate('Profile')} buttonStyle={styles.loginbutton}
                 title="Continue">
             </Button>
                 </FormControl>

@@ -76,6 +76,7 @@ const styles=StyleSheet.create({
       landingfooter:{
         width:'100%',
         height:'30%',
+        backgroundColor:'#17a2b8'
       
       }
   

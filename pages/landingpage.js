@@ -16,7 +16,7 @@ const LandingPage=({navigation})=>{
              </ImageBackground>
             </View>
             <View style={styles.landingfooter}>
-             <Text style={{fontWeight:'bold',fontSize:20,marginTop:'10%',color:'#161c2d',fontFamily:'monospace'}}>Drive. Deliver.Earn with Unihub</Text>
+             <Text style={{fontWeight:'bold',fontSize:20,marginTop:'10%',color:'#161c2d',fontFamily:'monospace',color:'#ffffff'}}>Drive. Deliver.Earn with Unihub</Text>
              <View style={styles.row}>
              <Button title='Sign in' buttonStyle={{width:200,padding:20,backgroundColor:'#1b2a4e'}} block
              onPress={()=>navigation.navigate('Login')} ></Button>
