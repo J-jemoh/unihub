@@ -1,9 +1,10 @@
 
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { NativeBaseProvider } from 'native-base';
 import { createDrawerNavigator} from '@react-navigation/drawer';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import SplashScreen from 'react-native-splash-screen'
 import Loginn from "./pages/login"
 import Homme from "./pages/home"
 import Dashboard from "./pages/dashboard"
@@ -12,6 +13,9 @@ import LandingPage from './pages/landingpage';
 
 const Stack = createNativeStackNavigator();
 const App =()=>{
+  useEffect(()=>{
+    SplashScreen.hide();
+  },[])
   return( 
     <NativeBaseProvider >
      <NavigationContainer>
