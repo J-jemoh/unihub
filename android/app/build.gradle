@@ -152,6 +152,12 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+      release {
+      storeFile file('jnyanga.keystore')
+      storePassword 'jnyanga@123'
+      keyAlias 'jnyanga'
+      keyPassword 'jnyanga@123'
+    }
     }
     buildTypes {
         debug {
