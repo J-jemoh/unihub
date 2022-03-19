@@ -11,7 +11,8 @@ import Payment from '../dashboard/payment';
 
 const Tab = createBottomTabNavigator();
 
-export default function App() {
+export default function App({navigation,route}) {
+  const {username,phone,useremail}=route.params;
   return (
   
       <Tab.Navigator
@@ -42,7 +43,7 @@ export default function App() {
         tabBarActiveTintColor: 'tomato',
         tabBarInactiveTintColor: 'gray',
       })}>
-        <Tab.Screen name="Home" component={HomeScreen} options={{headerShown: false}} />
+        <Tab.Screen name="Home" component={HomeScreen} options={{headerShown: false}} initialParams={{username,phone,useremail}} />
         <Tab.Screen name="Payment" component={Payment} options={{headerShown: false}} />
         <Tab.Screen name="RideHistory" component={Aboutus} options={{headerShown: false}} />
         <Tab.Screen name="About us" component={Aboutus} options={{headerShown: false}} />

@@ -4,7 +4,8 @@ import { ScrollView,View} from 'react-native';
 import { Button, Avatar,Card,Icon  } from 'react-native-elements'
 import styles from "../styles/style"
 
-const HomeScreen=()=>{
+const HomeScreen=({navigation,route})=>{
+  const {username,phone,useremail}=route.params;
 return(
     <ScrollView >
     <View style={styles.container} >
@@ -21,7 +22,8 @@ return(
           />
         </Center>
         <Center size="16"  width={{base: 200,lg: '80%'}} >
-              <Text>James Nyanga {"\n"} +254721531634 {"\n"} you@gmail.com</Text>
+              <Text>{username} {"\n"} {phone} {"\n"} {useremail} </Text>
+              <Text></Text>
             </Center>
              </Flex>
             <Card.Divider />
@@ -31,6 +33,9 @@ return(
           </Card>
           <Card containerStyle={{width:'100%' }}>
             <Card.Title>Language</Card.Title>
+          </Card>
+          <Card containerStyle={{width:'100%' }}>
+            <Card.Title></Card.Title>
           </Card>
       
     </View>
